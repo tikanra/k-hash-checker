@@ -409,7 +409,7 @@ namespace HashChecker
             string text = textBox1.Text;
             if (string.IsNullOrEmpty(text))
             {
-                MessageBox.Show("结果数据为空", "提示", MessageBoxButton.OK);
+                MessageBox.Show(this, "结果数据为空", "提示", MessageBoxButton.OK, MessageBoxImage.Information);
                 return;
             }
             Clipboard.SetText(text);
